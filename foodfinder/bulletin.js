@@ -13,7 +13,8 @@ const starterPosts = [
     desc: "Free fridge stocked daily — take what you need, leave what you can."
   }
 ];
-
+//color for bulletin board background
+const board_color = "#38380a";
 // Rotate through these colors to make it look like a real bulletin board
 const colors = ["#fdfd96", "#ffb7c5", "#b5ead7", "#aed6f1", "#f9c784"];
 let colorIndex = 0;
