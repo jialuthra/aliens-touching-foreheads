@@ -5,41 +5,54 @@
        <title>Food Finder - Bulletin Board</title>
 
        <link rel="stylesheet" href="style.css">
-       <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
 
    </head>
 
    <body>
 
        <div class="layout">
-
-        <nav>
-            <a href="index.html">map</a>
-            <a href="bulletin.html">bulletin board</a>
-        </nav>
-
-        <main>
-
-            <h1>Bulletin Board</h1>
-            <p>Share and discover free food events in Austin!</p>
-
-            <!-- code for allowing people to make submissions -->
-            <div class="form-container">
-                <input type="text" id="event-title" placeholder="Event name" />
-                <input type="text" id="event-location" placeholder="Location" />
-                <input type="date" id="event-date" />
-                <textarea id="event-desc" placeholder="Details (who, what, when...)"></textarea>
-                <button onclick="addPost()">Post It!</button>
+        <div class="header-row">
+            <nav>
+                <a href="index.html">map</a>
+                <a href="bulletin.html">bulletin board</a>
+            </nav>
+        
+            <div class ="header-text">
+                <h1>Bulletin Board</h1>
+                <p>Share and discover free food events in Austin!</p>
             </div>
+            </div>
+            <main>
 
-            <!-- code for displaying posts -->
-            <div class="board" id="board"></div>
+                <!-- code for displaying posts -->
+                <div class="board" id="board"></div>
+            
+                <h3 class="upload-title">Upload a Post</h3>
+                
+                <!-- code for allowing people to make submissions -->
+                <div class="form-container">
+                    <input type="text" id="event-title" placeholder="Event name" />
+                    <input type="userName" id="user-name" placeholder="Your Name" />
+                    <input type="text" id="event-location" placeholder="Location" />
+                    <input type="text" id="event-date" placeholder="Enter date and time" />
+                    <input type="url" id="event-link" placeholder="Link (optional)" />
+                    <textarea id="event-desc" placeholder="Details (who, what, when...)"></textarea>
+                    <input type="file" id="event-photo" accept="image/*" />
+                    <button onclick="addPost()">Post It!</button>
+                </div>
 
-        </main>
-           
-       </div>
+            </main>
+        </div>
 
+        <img src="images/harnold.png" class="harnold" id="harnold" alt="harnold" />
+       <script src="data.js"></script>
        <script src="bulletin.js"></script>
+       <div class="duck-border duck-top"></div>
+        <div class="duck-border duck-bottom"></div>
+        <div class="duck-border duck-left"></div>
+        <div class="duck-border duck-right"></div>
+       
    </body>
 </html>
 
