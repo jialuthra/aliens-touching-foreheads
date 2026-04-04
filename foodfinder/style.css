@@ -2,24 +2,32 @@
 
 /* whole page i guess */
 body {
-    background-color: rgb(255, 223, 120);
+    background-color: rgb(191, 231, 156);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
 }
 
 /* text types */
 
 h1 { /* heading 1 */
-    color: rgb(2, 33, 2);
+    color: rgb(244, 81, 170);
     font-size: 48px;
+    -webkit-text-stroke: 5px white;
+    paint-order: stroke fill;
 }
 
 h2 { /* heading 2 */
-    color: black;
+    color: rgb(244, 81, 170);
     font-size: 30px;
+    -webkit-text-stroke: 3px white;
+    paint-order: stroke fill;
 }
 
 p { /* paragraph */
-    color: black;
-    font-size: 16px;
+    color: rgb(244, 81, 170);
+    font-size: 20px;
+    -webkit-text-stroke: 3px white;
+    paint-order: stroke fill;
 }
 
 /* wraps the page in a horizontal flex container; nav and main */
@@ -32,23 +40,29 @@ p { /* paragraph */
 /* sidebar nav */
 nav {
     width: 180px;
-    background-color: white;
+    background-color: rgb(248, 169, 212);
     display: flex;
     flex-direction: column;
-    padding: 24px, 12px;
+    padding: 24px 12px;
     gap: 8px;
+    height: fit-content;
+    border-radius: 16px;
 }
 
 nav a {
-    color: black;
+    color: rgb(244, 81, 170);
     text-decoration: none;
     padding: 10px 14px;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 20px;
+    -webkit-text-stroke: 3px white;
+    paint-order: stroke fill;
+    transition: transform 0.15s ease;
 }
 
 nav a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.08);
 }
 
 main {
@@ -68,7 +82,7 @@ main {
     margin-bottom: 12px;
 }
 
-main h1, main h2, main p, .card, {
+main h1, main h2, main p, .card {
   width: 100%;
   max-width: 700px;
 }

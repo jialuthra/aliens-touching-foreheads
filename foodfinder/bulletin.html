@@ -2,9 +2,10 @@
 
 <html>
    <head>
-       <title>FoodFinder</title>
+       <title>Food Finder - Bulletin Board</title>
 
        <link rel="stylesheet" href="style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
 
    </head>
 
@@ -19,8 +20,20 @@
 
         <main>
 
-            <h1>Welcome to FoodFinder</h1>
-           <p>Find free food in Austin.</p>
+            <h1>Bulletin Board</h1>
+            <p>Share and discover free food events in Austin!</p>
+
+            <!-- code for allowing people to make submissions -->
+            <div class="form-container">
+                <input type="text" id="event-title" placeholder="Event name" />
+                <input type="text" id="event-location" placeholder="Location" />
+                <input type="date" id="event-date" />
+                <textarea id="event-desc" placeholder="Details (who, what, when...)"></textarea>
+                <button onclick="addPost()">Post It!</button>
+            </div>
+
+            <!-- code for displaying posts -->
+            <div class="board" id="board"></div>
 
         </main>
            

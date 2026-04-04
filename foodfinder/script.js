@@ -10,6 +10,19 @@ const locations = [
     // continue this format
 ]
 
+const posts = [
+    {title: "Free Bake Sale",
+    location: "Republic Square Park",
+    date: "Every Sunday",
+    desc: "Free baked goods every Sunday morning while supplies last!"},
+    {
+    title: "Community Fridge",
+    location: "East Austin Community Center",
+    date: "Daily",
+    desc: "Free fridge stocked daily — take what you need, leave what you can."
+  }
+];
+
 locations.forEach(loc => {
     L.marker([loc.lat, loc.lng])
         .addTo(map)
