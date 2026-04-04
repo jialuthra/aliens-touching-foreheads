@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>FoodFinder</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-    </head>
-    <body>
+   <head>
+       <title>FoodFinder</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+   </head>
+   <body>
 
-        <h1>Welcome to FoodFinder</h1>
-        <p>Find free food in Austin.</p>
+       <div class="layout">
+           <nav>
+               <a href="index.html">map</a>
+               <a href="bulletin.html">bulletin board</a>
+           </nav>
 
-        <div class="card">
-            <h2>Title</h2>
-            <p>Lowkey just experimenting here lol</p>
-        </div>
+           <main>
+               <h1>Welcome to FoodFinder</h1>
+               <p>Find free food in Austin.</p>
 
-        <div id="map"></div>
+               <div class="card">
+                   <h2>Title</h2>
+                   <p>Lowkey just experimenting here lol</p>
+               </div>
 
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <script src="script.js"></script>
-    </body>
+               <div id="map"></div>
+
+               <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+               <script src="script.js"></script>
+           </main>
+       </div>
+
+   </body>
 </html>

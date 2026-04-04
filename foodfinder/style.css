@@ -1,3 +1,5 @@
+
+
 /* whole page i guess */
 body {
     background-color: rgb(255, 223, 120);
@@ -5,22 +7,57 @@ body {
 
 /* text types */
 
-/* heading 1 */
-h1 {
+h1 { /* heading 1 */
     color: rgb(2, 33, 2);
     font-size: 48px;
 }
 
-/* heading 2 */
-h2 {
+h2 { /* heading 2 */
     color: black;
     font-size: 30px;
 }
 
-/* paragraph*/
-p {
+p { /* paragraph */
     color: black;
     font-size: 16px;
+}
+
+/* wraps the page in a horizontal flex container; nav and main */
+.layout {
+    display: flex;
+    min-height: 100vh; /* 100% of the height */
+}
+
+
+/* sidebar nav */
+nav {
+    width: 180px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 24px, 12px;
+    gap: 8px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 1;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {
@@ -29,6 +66,11 @@ p {
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 12px;
+}
+
+main h1, main h2, main p, .card, {
+  width: 100%;
+  max-width: 700px;
 }
 
 /* map */
